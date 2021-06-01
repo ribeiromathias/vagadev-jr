@@ -1,9 +1,10 @@
-@import 'header';
+// general
+@import 'general/normalize';
+@import 'general/reset';
+@import 'general/variables';
 
-@mixin sombra() {
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-}
+// components
+@import 'components/header';
 
-h1 {
-  @include sombra();
-}
+// responsive
+@import 'responsive/responsive';
