@@ -4,7 +4,8 @@
 @import 'general/variables';
 
 // components
+@import 'components/container';
 @import 'components/header';
-
-// responsive
-@import 'responsive/responsive';
+@import 'components/banner';
+@import 'components/cards';
+@import 'components/footer';

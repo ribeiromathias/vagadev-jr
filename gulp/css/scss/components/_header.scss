@@ -1,5 +1,123 @@
-$roxo: #84e;
+@import '../general/variables';
 
-body {
-  background: $roxo;
+header {
+  display: flex;
+  padding: 44px;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 576px) {
+    padding: 21px;
+  }
+  #nav {
+    &.active #menu {
+      @media (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    #menu {
+      display: none;
+      @media (max-width: 576px) {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        background: #084154;
+        height: 100vh;
+        z-index: 1000;
+        padding-top: 100px;
+      }
+      ul {
+        @media (max-width: 576px) {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        p {
+          @media (max-width: 576px) {
+            font-weight: 900;
+            font-size: 24px;
+          }
+        }
+        li {
+          a {
+            @media (max-width: 576px) {
+              background-color: #3ec6e0;
+              color: #fff;
+              padding-top: 7px;
+              padding-bottom: 7px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+    .logo-rush {
+      @media (max-width: 576px) {
+        width: 107px;
+        height: 23px;
+      }
+    }
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    img {
+      margin-left: 39px;
+      @media (max-width: 576px) {
+        margin-left: 16px;
+      }
+    }
+    .icon {
+      display: flex;
+      a {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        border-right: 1px solid #fff;
+        gap: 15px;
+        &:hover {
+          color: #3ec6e0;
+          font-weight: bold;
+        }
+        @media (max-width: 932px) {
+          border-right: none;
+        }
+        p {
+          padding-right: 43px;
+          margin: 7.5px 0;
+          @media (max-width: 932px) {
+            display: none;
+          }
+        }
+      }
+    }
+    .shop {
+      display: flex;
+      align-items: center;
+      .counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        font-weight: 900;
+        font-size: 14px;
+        color: #fff;
+        background-color: #3ec6e0;
+        border-radius: 25px;
+        margin-left: 7px;
+      }
+    }
+  }
 }

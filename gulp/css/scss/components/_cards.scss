@@ -1,0 +1,147 @@
+.main-games {
+  margin-top: 12.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  @media (max-width: 576px) {
+    margin-top: 6.5rem;
+  }
+  .main-game {
+    flex: 1;
+    width: 50%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    .main-game-cover {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 23rem;
+    }
+    .game1 {
+      background-image: url(../img/zelda_banner.jpg);
+    }
+    .game2 {
+      background-image: url(../img/sekiro_banner.jpg);
+    }
+    .wrapper {
+      display: flex;
+      .blue-tag {
+        background-color: #084154;
+        width: 0.688rem;
+        border-bottom-left-radius: 5px;
+      }
+      .main-game-title {
+        background-color: #3ec6e0;
+        display: flex;
+        align-items: center;
+        padding: 0px 30px;
+        flex: 1;
+        border-bottom-right-radius: 5px;
+        p {
+          font-weight: 600;
+          color: #084154;
+          min-width: 20rem;
+          width: -webkit-fill-available;
+          padding: 21px 0px;
+        }
+        .line {
+          background-color: #084154;
+          height: 1px;
+          width: 75%;
+        }
+      }
+    }
+  }
+}
+
+.products {
+  @media (max-width: 1243px) {
+    margin-top: 27.5rem;
+  }
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .products-title {
+    display: flex;
+    .shapes {
+      margin-right: 22px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      .shape {
+        background-color: #3ec6e0;
+        border-radius: 0px 0px 0px 5px;
+        width: 5.6px;
+        height: 5.6px;
+        margin: 2.8px;
+      }
+    }
+  }
+  h2 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.625rem;
+    color: #084154;
+  }
+  .cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.125rem;
+    .card {
+      box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
+      border-radius: 10px;
+      padding-top: 2.25rem;
+      max-width: 21.875rem;
+      .card-cover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 3px solid #3ec6e0;
+        padding-bottom: 1rem;
+      }
+      .card-details {
+        background-color: #f5f5f5;
+        padding: 24px 36px;
+        p {
+          margin: 0;
+          color: #084154;
+          font-size: 14px;
+        }
+        p:nth-child(2) {
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 21px;
+          padding-top: 27px;
+          padding-bottom: 24px;
+        }
+        .btn {
+          display: flex;
+          justify-content: center;
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #3ec6e0;
+            font-weight: 900;
+            font-size: 18px;
+            border-radius: 5px;
+            padding: 15px 90px;
+            &:hover {
+              background-color: #084154;
+              font-weight: bold;
+              transition-property: all;
+              transition-duration: 0.4s;
+              transition-timing-function: ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}

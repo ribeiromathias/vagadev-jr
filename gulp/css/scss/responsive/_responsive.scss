@@ -1,0 +1,17 @@
+// Header
+header {
+  nav {
+    .icon {
+      a {
+        @media (max-width: 932px) {
+          border-right: none;
+        }
+        p {
+          @media (max-width: 932px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

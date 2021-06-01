@@ -5,12 +5,173 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Vaga Dev Jr. N1</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/main.js"></script>
 </head>
 
 <body>
-  <h1>Testando</h1>
+  <div class="main">
+    <div class="hero">
+      <div class="container">
+        <header>
+          <nav id="nav">
+            <button onclick="toggleMenu()" id="btn-mobile">Menu</button>
+            <ul id="menu">
+              <ul>
+                <p>Luta</p>
+                <li><a href="/">Mortal Kombat</a></li>
+                <li><a href="/">Smash Bros</a></li>
+                <li><a href="/">Killer Instinct</a></li>
+                <li><a href="/">DBZ Kakarot</a></li>
+              </ul>
+
+              <ul>
+                <p>Ação / Aventura</p>
+                <li><a href="/">GTA V</a></li>
+                <li><a href="/">Tomb Rider</a></li>
+                <li><a href="/">HALO</a></li>
+                <li><a href="/">Call of Duty</a></li>
+              </ul>
+
+              <ul>
+                <p>Corrida</p>
+                <li><a href="/">NEED for SPEED</a></li>
+                <li><a href="/">Forza Horizon</a></li>
+              </ul>
+            </ul>
+          </nav>
+          <div class="logo">
+            <a href="#" id="btn-mobile">
+              <img src="svgs/icon_hamburguer.svg" alt="menu hambúrguer">
+            </a>
+            <img class="logo-rush" src="img/Logo_N1_Rush_fundo_escuro_bg_tranparente 1.png" alt="Logo N1">
+          </div>
+          <nav>
+            <div class="icon">
+              <a class="btn-2" href="#">
+                <img src="svgs/paper-plane.svg" alt="avião de papel">
+                <p>contato</p>
+              </a>
+            </div>
+
+            <div class="icon">
+              <a href="#">
+                <img src="svgs/search-solid.svg" alt="lupa de busca">
+                <p>buscar</p>
+              </a>
+            </div>
+            <div class="shop">
+              <img src="svgs/shopping-bag-solid.svg" alt="sacola de compra">
+              <div id="badge" class="counter">0</div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="herohero">
+          <div class="hero-details">
+            <div class="title-price">
+              <h1>mortal kombat</h1>
+              <div class="price">
+                <div class="real">R$ 299</div>
+                <div class="cent">,99</div>
+              </div>
+            </div>
+            <p>Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.</p>
+          </div>
+        </div>
+        <div class="main-games">
+          <div class="main-game">
+            <div class="main-game-cover game1">
+            </div>
+            <div class="wrapper">
+              <div class="blue-tag"></div>
+              <div class="main-game-title">
+                <p>The Legend of Zelda - Breath of the wild</p>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-game">
+            <div class="main-game-cover game2">
+            </div>
+            <div class="wrapper">
+              <div class="blue-tag"></div>
+              <div class="main-game-title">
+                <p>SEKIRO - Shadows die twice</p>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="products">
+      <div class="products-title">
+        <div class="shapes">
+          <div class="shape"></div>
+          <div class="shape"></div>
+          <div class="shape"></div>
+          <div class="shape"></div>
+          <div class="shape"></div>
+          <div class="shape"></div>
+          <div class="shape"></div>
+          <div class="shape"></div>
+          <div class="shape"></div>
+        </div>
+        <h2>Produtos em destaque</h2>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-cover"><img src="img/product-outriders.png" alt="jogo outriders"></div>
+          <div class="card-details">
+            <p>Outriders</p>
+            <p>R$ 200,00</p>
+            <div class="btn">
+              <a href="#">comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-cover"><img src="img/product-cyberpunk2077.png" alt="jogo ciberpunk"></div>
+          <div class="card-details">
+            <p>CYBERPUNK 2077</p>
+            <p>R$ 200,00</p>
+            <div class="btn">
+              <a href="#">comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-cover"><img src="img/product-donkey-kong-country-tropical-freeze.png" alt="jogo donkey kong"></div>
+          <div class="card-details">
+            <p>Donkey Kong Country Tropical Freeze</p>
+            <p>R$ 200,00</p>
+            <div class="btn">
+              <a href="#" id="b2">comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="img/logo_header 1.png" alt="logo N1">
+    </div>
+    <div class="footer-copyright">
+      <p>Agência N1 - Todos os direitos reservados</p>
+    </div>
+  </footer>
 </body>
 
 </html>

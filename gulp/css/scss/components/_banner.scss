@@ -1,0 +1,83 @@
+.main {
+  height: 75rem;
+  width: 100%;
+  .hero {
+    background-image: url(../img/principal_banner_desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 52.5rem;
+    width: 100%;
+    color: #fff;
+    @media (max-width: 576px) {
+        background-image: url(../img/principal_banner_mobile.jpg);
+        height: 27.25rem;
+        min-width: 23.438rem;
+      }
+    
+    .herohero {
+      display:flex;
+      justify-content: flex-end;
+      width: 100%;
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+      .hero-details {
+        margin-top: 5.75rem;
+        text-align: right;
+        max-width: 26.25rem;
+        padding-right: 10.94rem;
+        @media (max-width: 932px) {
+          padding-right: 0;
+        }
+        @media (max-width: 576px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: #00000099;
+          margin-top: 123px;
+          padding: 14px 29px;
+          height: 214px;
+          max-width: 100%;
+        }
+        h1 {
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 2.875rem;
+          margin: 0;
+          @media (max-width: 576px) {
+            font-size: 1.625rem;
+          }
+        }
+        .price {
+          display: flex;
+          justify-content: flex-end;
+          color: #3ec6e0;
+          font-weight: 600;
+          .real {
+            font-size: 4.375rem;
+            line-height: 5.125rem;
+            @media (max-width: 576px) {
+              font-size: 3rem;
+            }
+          }
+          .cent {
+            font-size: 1.75rem;
+            line-height: 2.063rem;
+            padding-top: 0.938rem;
+            @media (max-width: 576px) {
+              padding-top: 1.2rem;
+            }
+          }
+        }
+        p {
+          line-height: 155%;
+          @media (max-width: 576px) {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+    
+  }
+}
