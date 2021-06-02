@@ -19,7 +19,6 @@
         <header>
           <div class="logo">
             <nav id="nav">
-              <!-- <button onclick="toggleMenu()" id="btn-mobile">Menu</button> -->
               <a onclick="toggleMenu()" id="btn-mobile">
                 <img src="svgs/icon_hamburguer.svg" alt="menu hambúrguer">
               </a>
@@ -114,6 +113,19 @@
 
   <div class="container">
     <section class="products">
+
+      <div id="modal">
+        <div id="success-card">
+          <div id="success-card-content">
+            <img onclick="toggleModal()" id="btn-exit" src="svgs/close_btn.svg" alt="Botão para fechar modal">
+            <div class="line"></div>
+            <p>Pedido realizado com sucesso!</p>
+            <div class="line"></div>
+            <img class="success-img" src="img/image 6.png" alt="Mario paz e amor">
+          </div>
+        </div>
+      </div>
+
       <div class="products-title">
         <div class="shapes">
           <div class="shape"></div>
@@ -135,7 +147,7 @@
             <p>Outriders</p>
             <p>R$ 200,00</p>
             <div class="btn">
-              <a href="#">comprar</a>
+              <a onclick="toggleModal()" id="btn-compra">comprar</a>
             </div>
           </div>
         </div>
@@ -146,7 +158,7 @@
             <p>CYBERPUNK 2077</p>
             <p>R$ 200,00</p>
             <div class="btn">
-              <a href="#">comprar</a>
+              <a onclick="toggleModal()" id="btn-compra">comprar</a>
             </div>
           </div>
         </div>
@@ -157,7 +169,7 @@
             <p>Donkey Kong Country Tropical Freeze</p>
             <p>R$ 200,00</p>
             <div class="btn">
-              <a href="#" id="b2">comprar</a>
+              <a onclick="toggleModal()" id="btn-compra">comprar</a>
             </div>
           </div>
         </div>

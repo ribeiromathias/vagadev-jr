@@ -1,0 +1,47 @@
+#modal {
+  &.active #success-card {
+    display: flex;
+    justify-content: center;
+  }
+  #success-card {
+    display: none;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 167.7vh;
+    left: 0;
+    top: 0;
+    background-color: #08415490;
+    z-index: 1000;
+    #success-card-content {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 5px;
+      justify-content: space-between;
+      align-items: center;
+      #btn-exit {
+        cursor: pointer;
+        width: 35px;
+        align-self: flex-end;
+        padding: 10px;
+      }
+      p{
+        color: #084154;
+        font-weight: 300;
+        font-size: 30px;
+        max-width: 240px;
+        text-align: center;
+      }
+      .success-img{
+        width: 50%;
+        padding: 0 60px;
+      }
+      .line {
+          background-color: #084154;
+          height: 1px;
+          width: 75%;
+        }
+    }
+  }
+}
