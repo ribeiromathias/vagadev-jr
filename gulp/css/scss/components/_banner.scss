@@ -15,12 +15,13 @@
         min-width: 23.438rem;
       }
     
-    .herohero {
+    .hero-wrapper {
       display:flex;
       justify-content: flex-end;
       width: 100%;
       @media (max-width: 576px) {
         width: 100%;
+        margin-bottom: 60px;
       }
       .hero-details {
         margin-top: 5.75rem;

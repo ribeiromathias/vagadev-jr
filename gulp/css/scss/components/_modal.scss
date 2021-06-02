@@ -13,6 +13,9 @@
     top: 0;
     background-color: #08415490;
     z-index: 1000;
+    @media (max-width: 576px) {
+      height: 245.7vh;
+    }
     #success-card-content {
       display: flex;
       flex-direction: column;
