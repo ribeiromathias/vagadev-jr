@@ -2,7 +2,7 @@
 
 header {
   display: flex;
-  padding: 44px;
+  padding: 2.75rem;
   justify-content: space-between;
   align-items: center;
   @media (max-width: 576px) {
@@ -11,10 +11,10 @@ header {
   .logo {
     display: flex;
     align-items: center;
-    gap: 43px;
+    gap: 2.688rem;
     .logo-rush {
       @media (max-width: 576px) {
-        width: 107px;
+        width: 6.688rem;
         height: 23px;
       }
     }

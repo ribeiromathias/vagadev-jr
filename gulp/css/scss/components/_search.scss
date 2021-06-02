@@ -16,7 +16,7 @@
     height: 249px;
     right: 150px;
     top: 101.48px;
-    border: 2px solid #084154;
+    border: 2px solid $dark-blue;
     border-radius: 5px;
     background-color: #fff;
     @media (max-width: 576px) {
@@ -29,7 +29,7 @@
       left: 0px;
       border-radius: 0px;
       border: none;
-      background-color: #084154;
+      background-color: $dark-blue;
       z-index: 1000;
       padding-top: 100px;
       gap: 50px;

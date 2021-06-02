@@ -29,7 +29,7 @@
     .wrapper {
       display: flex;
       .blue-tag {
-        background-color: #084154;
+        background-color: $dark-blue;
         width: 0.688rem;
         border-bottom-left-radius: 5px;
       }
@@ -42,13 +42,13 @@
         border-bottom-right-radius: 5px;
         p {
           font-weight: 600;
-          color: #084154;
+          color: $dark-blue;
           min-width: 20rem;
           width: -webkit-fill-available;
           padding: 21px 0px;
         }
         .line {
-          background-color: #084154;
+          background-color: $dark-blue;
           height: 1px;
           width: 75%;
         }
@@ -87,7 +87,7 @@
     font-weight: 300;
     font-size: 2rem;
     line-height: 2.625rem;
-    color: #084154;
+    color: $dark-blue;
   }
   .cards {
     margin-top: 5rem;
@@ -112,15 +112,15 @@
         padding: 24px 36px;
         p {
           margin: 0;
-          color: #084154;
+          color: $dark-blue;
           font-size: 14px;
         }
         p:nth-child(2) {
           font-weight: 900;
-          font-size: 18px;
-          line-height: 21px;
-          padding-top: 27px;
-          padding-bottom: 24px;
+          font-size: 1.125rem;
+          line-height: 1.313rem;
+          padding-top: 1.688rem;
+          padding-bottom: 1.5rem;
         }
         .btn {
           display: flex;
@@ -133,9 +133,9 @@
             font-weight: 900;
             font-size: 18px;
             border-radius: 5px;
-            padding: 15px 90px;
+            padding: 15px 5.625rem;
             &:hover {
-              background-color: #084154;
+              background-color: $dark-blue;
               font-weight: bold;
               transition-property: all;
               transition-duration: 0.4s;
