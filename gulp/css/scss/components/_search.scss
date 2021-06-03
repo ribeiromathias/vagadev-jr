@@ -7,7 +7,7 @@
       align-items: flex-start;
     }
   }
-  
+
   #search-card {
     display: none;
     align-items: center;
@@ -18,7 +18,7 @@
     top: 101.48px;
     border: 2px solid $dark-blue;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: $white;
     @media (max-width: 576px) {
       display: none;
       flex-direction: column;

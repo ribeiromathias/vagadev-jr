@@ -34,12 +34,15 @@
         border-bottom-left-radius: 5px;
       }
       .main-game-title {
-        background-color: #3ec6e0;
+        background-color: $blue;
         display: flex;
         align-items: center;
         padding: 0px 30px;
         flex: 1;
         border-bottom-right-radius: 5px;
+        @media (max-width: 376px) {
+          padding: 0px 5px;
+        }
         p {
           font-weight: 600;
           color: $dark-blue;
@@ -73,8 +76,11 @@
       margin-right: 22px;
       display: grid;
       grid-template-columns: auto auto auto;
+      @media (max-width: 376px) {
+        margin-right: 5px;
+      }
       .shape {
-        background-color: #3ec6e0;
+        background-color: $blue;
         border-radius: 0px 0px 0px 5px;
         width: 5.6px;
         height: 5.6px;
@@ -104,7 +110,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-bottom: 3px solid #3ec6e0;
+        border-bottom: 3px solid $blue;
         padding-bottom: 1rem;
       }
       .card-details {
@@ -128,8 +134,8 @@
           a {
             text-decoration: none;
             text-transform: uppercase;
-            color: #fff;
-            background-color: #3ec6e0;
+            color: $white;
+            background-color: $blue;
             font-weight: 900;
             font-size: 18px;
             border-radius: 5px;

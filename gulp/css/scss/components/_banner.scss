@@ -8,15 +8,15 @@
     background-size: cover;
     height: 52.5rem;
     width: 100%;
-    color: #fff;
+    color: $white;
     @media (max-width: 576px) {
-        background-image: url(../img/principal_banner_mobile.jpg);
-        height: 27.25rem;
-        min-width: 23.438rem;
-      }
-    
+      background-image: url(../img/principal_banner_mobile.jpg);
+      height: 27.25rem;
+      min-width: 23.438rem;
+    }
+
     .hero-wrapper {
-      display:flex;
+      display: flex;
       justify-content: flex-end;
       width: 100%;
       @media (max-width: 576px) {
@@ -53,7 +53,7 @@
         .price {
           display: flex;
           justify-content: flex-end;
-          color: #3ec6e0;
+          color: $blue;
           font-weight: 600;
           .real {
             font-size: 4.375rem;
@@ -79,6 +79,5 @@
         }
       }
     }
-    
   }
 }
