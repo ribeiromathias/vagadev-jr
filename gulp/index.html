@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="js/main.js"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -80,7 +79,7 @@
             </div>
             <div class="shop">
               <img src="svgs/shopping-bag-solid.svg" alt="sacola de compra">
-              <div id="badge" class="counter">0</div>
+              <span id="badge" class="counter">0</span>
             </div>
           </nav>
         </header>
@@ -132,7 +131,7 @@
       <div id="modal">
         <div id="success-card">
           <div id="success-card-content">
-            <img onclick="toggleModal()" id="btn-exit" src="svgs/close_btn.svg" alt="Botão para fechar modal">
+            <img onclick="toggleModal()" id="btn-exit" class="botaook" src="svgs/close_btn.svg" alt="Botão para fechar modal">
             <div class="line"></div>
             <p>Pedido realizado com sucesso!</p>
             <div class="line"></div>
@@ -184,7 +183,7 @@
             <p>Donkey Kong Country Tropical Freeze</p>
             <p>R$ 200,00</p>
             <div class="btn">
-              <a onclick="toggleModal()" id="btn-compra">comprar</a>
+              <a onclick="toggleModal()" id="btn-compra" class="add-to-cart">comprar</a>
             </div>
           </div>
         </div>
@@ -199,7 +198,7 @@
       <p>Agência N1 - Todos os direitos reservados</p>
     </div>
   </footer>
-    <script>
+  <script>
     $(function () {
       var words = [
         'mortal kombat',
@@ -216,13 +215,14 @@
         'sekiro',
         'outsiders',
         'cyberpunk 2077',
-        'donkey kong',
+        'donkey kong'
       ];
       $('#words').autocomplete({
         source: words,
       });
     });
   </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
