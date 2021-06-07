@@ -1,5 +1,3 @@
-document.getElementsByClassName('botaook')[0];
-
 var currentItems = 0;
 
 $(document).ready(function () {
